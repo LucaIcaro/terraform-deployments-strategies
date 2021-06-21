@@ -16,4 +16,4 @@ tutorial](https://learn.hashicorp.com/tutorials/terraform/blue-green-canary-test
 4. to deploy "staging", `terraform apply -var 'traffic_distribution=blue' -var 'enable_green_env=true'`
 5. to promote "staging" to production", `terraform apply -var 'traffic_distribution=green'`, or, if someone wants to test canary, in the variables there are all the other `traffic_dist_map` to do that
 6. after the deployment, `terraform apply -var 'traffic_distribution=green' -var 'enable_blue_env=false'` will destroy the former "production"
-7. `terraform destroy -var 'traffic_distribution=$LAST_TRAFFIC_DISTRIBUTION'` will destroy the environment
+7. `terraform destroy -var 'traffic_distribution=$LAST_TRAFFIC_DISTRIBUTION'` will destroy the entire environment
