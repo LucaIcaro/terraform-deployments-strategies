@@ -1,6 +1,6 @@
 # What?
 
-This project has different folders. Each folder has a readme file that explain a slightly different deployment strategy.
+This project has different folders. Each folder has a readme file that explain a deployment strategy using different tactics.
 They are mostly blue-green with different options.
 
 ## The examples
