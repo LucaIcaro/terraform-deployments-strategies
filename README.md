@@ -7,7 +7,6 @@ They are mostly blue-green with different options.
 1) blue/green and canary with one ELB. The production is the only environment accessible from the internet.
 2) blue/green with one ELB. Both can be accessed on the internet with different URLs
 3) blue/green with two ELBs (failed - see README)
-4) blue/green with one ELB and separated frontend and backend
 
 # How?
 

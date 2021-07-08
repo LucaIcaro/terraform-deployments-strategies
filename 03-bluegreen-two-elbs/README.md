@@ -1,11 +1,9 @@
 # What?
 
-In this example, we have only one ELB providing canary blue-green deployment.
+In this example, we have only two ELBs providing canary blue-green deployment.
 _Blue/Green_ in this example do not mean _Production/Staging_ but they are interchangable: the first time blue is production, then green is production, then blue again, etc.
 
 The production environment and staging are both reachable on the internet by using different URLs.
-
-The code is similar to example 01, the main difference is that we are using `aws_lb_listener_rule` to define rules to redirect requests from the ELB.
 
 # How-To
 
