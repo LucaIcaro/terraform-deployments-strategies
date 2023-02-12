@@ -21,7 +21,7 @@ The production environment and staging are both reachable on the internet by usi
 
 This approach is not working, because TF tries to attach target groups __before__ removing them from the previous load balancer:
 ```
-│ Error: Error modifying LB Listener Rule: TargetGroupAssociationLimit: The following target groups cannot be associated with more than one load balancer: arn:aws:elasticloadbalancing:us-west-2:756517308436:targetgroup/blue-tg-tops-rooster-lb/d7d9ec0c24ef07d8
+│ Error: Error modifying LB Listener Rule: TargetGroupAssociationLimit: The following target groups cannot be associated with more than one load balancer: arn:aws:elasticloadbalancing:us-west-2:1234567890:targetgroup/blue-tg-tops-rooster-lb/d7d9ec0c24ef07d8
 ```
 
 Even if this was possible, since the logic of the code requires blue/green interchangeable, it would mean that we will have some downtime for every deploy.
